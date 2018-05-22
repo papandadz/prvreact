@@ -163,9 +163,9 @@ class App extends Component {
               <Playlist playlist={playlist}/>
             )}
         </div> : <button onClick={() => {
-          window.location=window.location.includes('localhost') 
+          window.location=window.location.href.includes('localhost') 
             ? 'http://localhost:8888/login' 
-            : 'https://prvreact.herokuapp.com/login'}
+            : 'https://prvreact-backend.herokuapp.com/login'}
         }
          style={{padding: "20px", "fontSize": "50px", "marginTop":"20px"}}>Sign in with Spotify</button>
         }
